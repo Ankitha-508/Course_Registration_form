@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/courseregerform.css">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1 class="maintag">Course Registration Form</h1></center></marquee>
+    <section>
+    <form action="/response.html">
+        <fieldset>
+            <legend>Personal details</legend>
+    <table>
+        <tr>
+            <td><label class="c">Firstname*</label></td> 
+            <td>  <input type="text" id="name" placeholder="Eg:Harshini" required>
+            <p>enter the first name</p>
+            </td>
+            </tr>
+            <tr>
+            
+            <td><label class="c">surname</label></td>
+           <td> <input type="text" id="name" placeholder="Surname" required>
+            <p>enter you sur name(optional)</p>
+        </td>
+        </tr>
+           
+        <tr>
+            <td><label class="c">Mobile number*</label></td>
+        
+        <td><input type="tel" id="number" name="number" placeholder="+91" required size="10">
+        <p>enter you 10 digit mobile number</p>
+        </td>
+        </tr>
+        
+        <tr>
+           <td> <label for="email">Email*</label>
+            <td><input type="email" id="email" name="mail" placeholder="xyz@gmail.com" required>
+            <p>enter valid email address</p>
+            <img class="valid" src="/check-button.png" width="20px" height="20px" alt="valid">
+            <img class="invalid" src="/no.png" width="20px" height="20px" alt="invalid">
+            </td>
+        
+        </tr>
+       <tr>
+        <td> <label class="c">Password*</label></td>
+        <td><input type="password" id="Password" name="Password" placeholder="password" required>
+            <p>enter valid password</p>
+        </td>
+       </tr>
+        <tr>
+            <td><label class="c">confirm Password*</label></td>
+        <td><input type="password" id="password" name="password" placeholder="confirm passwrd" required>
+            <p>enter valid conform password</p>
+        </td>
+        </tr>
+       <tr>
+         <td><label class="c">DOB*</label></td>
+       <td> <input type="date" id="number" name="number">
+        <p>enter valid dob</p>
+    </td>
+        
+       </tr>
+        <tr>
+            <td><label class="c">Gender*</label></td>
+        <td><input required type="radio" name="gender" value="Male"><label>Male</label>
+        <input required type="radio" name="gender" value="Female"><label>Female</label>
+        <input required type="radio" name="gender" value="others"><label>Others</label>
+        </td>
+        </tr>
+
+        <br>
+       <tr>
+         <td><label class="c">select Country</label></td>
+         <td><select>
+            <option value="select">Select</option>
+           <option value="INdia">India</option>
+            <option value="Austrlia">Austraila</option>
+            <option value="russia">Russia</option>
+        </select></td>
+        
+       </tr>
+        
+
+        <tr>
+           <td> <label for="file">Upload picture</label></td>
+        
+        <td><input class="file" type="file" name="" id=""></td>
+        </tr>
+        
+        <tr>
+           
+      
+
+        </tr>
+        
+        </table>
+    </form>
+</fieldset>
+</section>
+
+    <form>
+        <fieldset>
+        <legend>Course details</legend>
+        <table>
+            <tr>
+             <td><label>Select course</label>
+        </td>
+        <td>
+        <select>
+            <option value="java full stack">Python full stack</option>
+            <option>java full stack</option>
+        </select>
+        </td>
+        </tr>
+        <tr>
+        <td><label>Delivery Mode</label></td>
+        <td>
+        <input required type="radio" name="online" id="Online" value="Online">
+        <label>ONLINE</label>
+        <input required type="radio" name="offline" id="offline" value="offline">
+        <label>OFFLINE</label>
+        </td>
+        </tr>
+        <tr>
+        <td><label for="institute">Institution</label></td>
+        <td><input type="text" placeholder="Tap Academy" readonly></td>
+        </tr>
+        <tr>
+        <td><label for="comments">comment</label></td>
+        <td>
+        <textarea placeholder="Sessions are good, best le3arning environment" ></textarea>
+        
+        </td>
+</tr>
+         
+        </fieldset>
+         <td> <input type="reset"></td>
+       <td><input type="submit"></td>
+        <br>
+
+    </form>
+</table>
+</body>
+</html>
