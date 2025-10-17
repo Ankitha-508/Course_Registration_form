@@ -1,0 +1,145 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  margin: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.maintag {
+  width: 500px;
+  border: 3px solid blue;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 117, 1) 19%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 15px 20px;
+  margin: 20px;
+  font-size: 30px;
+  box-shadow: 10px 10px 30px blue;
+}
+fieldset {
+  border: 3px solid blue;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(0, 0, 15) 19%,
+    rgb(24, 29, 135) 100%
+  );
+  padding: 30px;
+  margin: 10px;
+  font-size: 15px;
+}
+form {
+  width: 500px;
+  margin: auto;
+  padding: 5px;
+}
+legend {
+  border: 3px solid aqua;
+  border-radius: 10px;
+  background-color: aqua;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 5px 25px;
+  margin: 0px 10px;
+}
+table {
+  width: 100%;
+}
+td {
+  padding: 12px 0px;
+}
+label {
+  color: yellow;
+  font-weight: 900;
+  font-size: 15px;
+}
+input,
+select,
+textarea {
+  border-radius: 12px;
+  padding: 14px 30px;
+  font-size: 15px;
+  width: 100%;
+  background: #22c1c3;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  color: white;
+  font-weight: 600;
+  border: 2px solid aqua;
+}
+input[readonly] {
+  background: red;
+  border: 2px solid whitesmoke;
+}
+input[type="radio"] {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}
+input[type="file"] {
+  background-color: linear-gradient(135deg, #22c1c3, #203243);
+  color: white;
+  border: 3px solid #4a90e2;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+}
+input[type="submit"],
+input[type="reset"] {
+  background: #3f5efb;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  color: white;
+  border: 3px solid aqua;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+p {
+  display: none;
+  color: #ffff;
+  font-weight: 500;
+  font-size: 15px;
+  background: aquamarine;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 8px 0;
+}
+input:focus + p {
+  display: block;
+}
+img {
+  display: none;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="email"]:focus:valid + p ~ img.valid {
+  display: inline;
+}
+input[type="email"]:focus:invalid + p ~ img.invalid {
+  display: inline;
+}
